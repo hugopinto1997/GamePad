@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/animatedbg"
+    android:id="@+id/layout"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="225dp">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="75dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:id="@+id/nitrous"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/notr" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:id="@+id/led"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/led" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:id="@+id/radar"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/rpng" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:id="@+id/pito"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/speaker" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="225dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="75dp"
+                android:layout_gravity="center"
+                android:layout_height="75dp">
+
+              <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/triangle"
+                  android:layout_marginRight="5dp"
+                    android:src="@drawable/triangle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+
+              <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/square"
+                    android:src="@drawable/square" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/circle"
+                    android:src="@drawable/circle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="75dp"
+                android:layout_gravity="center"
+                android:layout_height="75dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cross"
+                    android:src="@drawable/cross" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Nitrous: "
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="OFF"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:id="@+id/n20"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Gearbox: "
+                android:textStyle="bold"
+                android:layout_marginLeft="40dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:id="@+id/gearbox"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" H. Lights: "
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="OFF"
+                android:id="@+id/lights"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Sensor: "
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="OFF"
+                android:id="@+id/usensor"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
