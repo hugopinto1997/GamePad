@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     TextView gearbox, nitrotext, sensortext, lights;
     int gbox=1;
     Boolean nitroflag=false, lightflag=false, sensorflag=false;
+    
 
     LinearLayout fondo;
     AnimationDrawable animacion;
