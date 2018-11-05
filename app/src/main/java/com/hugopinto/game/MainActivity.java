@@ -15,14 +15,17 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import io.github.controlwear.virtual.joystick.android.JoystickView;
+
 public class MainActivity extends AppCompatActivity {
 
     ImageView equis, cuadrado, triangulo, circulo;
     ImageView nitro, luz, claxon, sensor;
-    TextView gearbox, nitrotext, sensortext, lights;
+    TextView gearbox, nitrotext, sensortext, lights, angletext;
     int gbox=1;
     Boolean nitroflag=false, lightflag=false, sensorflag=false;
-    
+
+    JoystickView joystick;
 
     LinearLayout fondo;
     AnimationDrawable animacion;
@@ -52,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         cuadrado = findViewById(R.id.square);
         triangulo = findViewById(R.id.triangle);
         circulo = findViewById(R.id.circle);
+        joystick = findViewById(R.id.movement);
 
         //Features
         nitro = findViewById(R.id.nitrous);
@@ -64,6 +68,14 @@ public class MainActivity extends AppCompatActivity {
         nitrotext = findViewById(R.id.n20);
         sensortext = findViewById(R.id.usensor);
         lights = findViewById(R.id.lights);
+        angletext = findViewById(R.id.angulo);
+
+        joystick.setOnMoveListener(new JoystickView.OnMoveListener() {
+            @Override
+            public void onMove(int angle, int strength) {
+                angletext.setText(String.valueOf(angle));
+            }
+        });
 
         cuadrado.setOnTouchListener(new View.OnTouchListener() {
             @Override

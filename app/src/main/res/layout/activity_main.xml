@@ -16,11 +16,43 @@
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_marginLeft="40sp"
-            android:layout_marginRight="40sp"
-            android:layout_marginTop="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="8dp"
             android:layout_width="match_parent"
-            android:layout_height="225dp">
+            android:layout_height="210dp">
+
+        <io.github.controlwear.virtual.joystick.android.JoystickView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gbj"
+            app:JV_buttonSizeRatio="40%"
+            android:id="@+id/movement"
+            app:JV_buttonImage="@drawable/joystickfinal"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:textSize="14sp"
+               android:text="Angle: "
+               android:textColor="#ffffff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:text="0"
+                android:id="@+id/angulo"
+                android:textColor="#ffffff"/>
 
 
         </LinearLayout>
@@ -28,7 +60,6 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_height="75dp">
